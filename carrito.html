@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito de Compras (Vista preliminar)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Carrito de Compras de: <span id="nombreUsuario">Invitado</span></h2>
+
+<div style="margin-bottom: 20px;">
+    <button class="btn-primary" onclick="window.location.href='index.html'">
+        ← Volver a la Tienda
+    </button>
+</div>
+
+<div id="contenedorCarrito">
+
+    <!-- Tabla de ejemplo para la vista preliminar -->
+    <table>
+        <tr>
+            <th>Producto</th>
+            <th>Precio Unitario</th>
+            <th>Cantidad</th>
+            <th>Subtotal</th>
+            <th>Acciones</th>
+        </tr>
+        <tr>
+            <td>Producto de ejemplo 1</td>
+            <td>$100.00</td>
+            <td>
+                <input type="number" value="1" min="1" style="width: 60px; padding:5px;">
+                <button class="btn-primary">Actualizar</button>
+            </td>
+            <td>$100.00</td>
+            <td>
+                <button class="btn-danger">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Producto de ejemplo 2</td>
+            <td>$250.00</td>
+            <td>
+                <input type="number" value="2" min="1" style="width: 60px; padding:5px;">
+                <button class="btn-primary">Actualizar</button>
+            </td>
+            <td>$500.00</td>
+            <td>
+                <button class="btn-danger">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: right;"><strong>Total a Pagar:</strong></td>
+            <td colspan="2"><strong>$600.00</strong></td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>
