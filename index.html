@@ -2,16 +2,16 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Tienda - Productos (Vista preliminar)</title>
+    <title>Tienda - Productos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="nav">
     <div class="user-panel">
-        <strong>Usuario: <span id="nombreUsuario">Invitado</span></strong>
+        <strong>Usuario: <span id="nombreUsuario">Cargando...</span></strong>
         <input type="text" id="nuevoUsuarioInput" placeholder="Cambiar a otro usuario...">
-        <button class="btn-warning">Cambiar Sesión</button>
+        <button class="btn-warning" onclick="cambiarUsuario()">Cambiar Sesión</button>
     </div>
     <div>
         <a href="carrito.html">Ir al Carrito (<span id="contadorCarrito">0</span>)</a>
@@ -19,32 +19,8 @@
 </div>
 
 <h2>Lista de Productos</h2>
+<div id="listaProductos" class="productos-container"></div>
 
-<div id="listaProductos" class="productos-container">
-
-    <!-- Datos de ejemplo para la vista preliminar -->
-    <div class="producto">
-        <h3>Producto de ejemplo 1</h3>
-        <p>Precio: $100.00</p>
-        <p>Stock: 10</p>
-        <button class="btn-agregar">Añadir al carrito</button>
-    </div>
-
-    <div class="producto">
-        <h3>Producto de ejemplo 2</h3>
-        <p>Precio: $250.00</p>
-        <p>Stock: 5</p>
-        <button class="btn-agregar">Añadir al carrito</button>
-    </div>
-
-    <div class="producto">
-        <h3>Producto de ejemplo 3</h3>
-        <p>Precio: $75.50</p>
-        <p>Stock: 20</p>
-        <button class="btn-agregar">Añadir al carrito</button>
-    </div>
-
-</div>
-
+<script src="index.js"></script>
 </body>
 </html>
